@@ -1,0 +1,19 @@
+{
+  "name": "minecraft-afk-bot",
+  "version": "1.0.0",
+  "description": "24/7 Minecraft AFK bot with anti-AFK movement, auto-reconnect, remote control, and HTTP API",
+  "main": "bot.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node bot.js",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop afk-bot",
+    "pm2:logs": "pm2 logs afk-bot"
+  },
+  "dependencies": {
+    "mineflayer": "^4.20.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  }
+}
